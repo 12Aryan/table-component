@@ -1,13 +1,113 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ----------------------Heading----------------- */
+.heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* ---------------------Table ---------------------*/
+
+.names {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.table-container-div {
+  width: 100%;
+  border: 1px solid #E2E3ED;
+  display: flex;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  padding: 2rem;
+  /* margin: 1rem; */
+}
+
+.table-div {
+  width: 100%;
+  margin: 1rem;
+}
+
+.table-div td {
+  padding: 0.5rem;
+}
+
+tbody td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-div td {
+    padding: 0.1rem 0.9rem 0.1rem 0.9rem;
+    margin: 1rem;
+  }
+  .Action{
+    margin: 1rem;
+  }
+}
+
+
+/* -----------status and para classes--------------- */
+.Status {
+  position: relative;
+  left: 40px;
+}
+
+.Action {
+  position: relative;
+  right: 25px;
+}
+
+p {
+  width: 131px;
+}
+
+.para {
+  padding-top: 0.3rem;
+}
+
+.Active {
+  background: #DAF8E7;
+  color: #00B34D;
+  padding: 2px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.Viewer {
+  background-color: #D8F1FF;
+  color: #22B0FF;
+  padding: 2px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.Deactivated {
+  background-color: #FFF2F3;
+  color: #FF3F50;
+  padding: 2px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.Pending {
+  background-color: #FFF7CF;
+  color: #EABD00;
+  padding: 2px;
+  text-align: center;
+  border-radius: 3px;
 }

@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Table from './Table'
 
-function App() {
+
+const App = () => {
+  const keys = ['Name', 'Role', 'Email', 'Status', 'Join Date', 'Action'];
+  const data = [
+    { name: 'Aryan', role: 'engineer', email: 'test@mailinator.com', status: "Active", joindate: "12/03/2023" },
+    { name: 'Aryan1', role: 'engineer', email: 'test@mailinator.com', status: "Pending", joindate: "12/03/2023" },
+    { name: 'Aryan2', role: 'engineer', email: 'test@mailinator.com', status: "Viewer", joindate: "12/03/2023" },
+    { name: 'Aryan3', role: 'engineer', email: 'test@mailinator.com', status: "Deactivated", joindate: "12/03/2023" }
+
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <><Table keys={keys} data={data}></ Table></>
+  )
 }
-
-export default App;
+export default App
